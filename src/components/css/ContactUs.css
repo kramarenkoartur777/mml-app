@@ -1,0 +1,64 @@
+.contactUsContainer {
+  display: block;
+  background: #4a6d96;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding-top: 5%;
+}
+.contactusHeader {
+  width: 72%;
+  display: block;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.contactusHeaderLeft {
+  float: right;
+  width: 25%;
+}
+.contactusHeaderLeft h1 {
+  font-size: 1.4vw;
+  text-align: center;
+}
+.contactusHeaderMapBlock {
+  display: block;
+  overflow: hidden;
+  width: 85%;
+  margin: 0 auto;
+}
+.contactusHeaderMapIcon {
+  float: left;
+  width: 15%;
+}
+.contactusHeaderMapBlock p {
+  float: left;
+  margin: 5px 0;
+  font-size: 1vw;
+  margin-left: 5%;
+}
+.contactusHeaderEmailBlock {
+  width: 85%;
+  margin: 0 auto;
+  display: block;
+  overflow: hidden;
+}
+.contactusHeaderEmailIcon {
+  float: left;
+  margin: 0;
+  width: 15%;
+}
+.contactusHeaderEmailBlock p {
+  float: left;
+  margin: 11px 0;
+  font-size: 1vw;
+  margin-left: 5%;
+}
+.contactusFooter {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+}
+.contactusFooter h6 {
+  color: #7d96b5;
+  font-size: 0.7vw;
+}

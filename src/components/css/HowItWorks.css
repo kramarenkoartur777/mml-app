@@ -1,0 +1,66 @@
+.howitworksContainer {
+  padding: 0;
+  margin: 0 auto;
+  width: 94%;
+  position: relative;
+}
+.howitworksLogoBlock {
+  position: absolute;
+  width: 6%;
+  margin-top: 2%;
+}
+.howitworksLogoIcon {
+  width: 100%
+}
+.howitworksInfoBlock {
+  width: 100%;
+}
+.howitworksInfoImg {
+  width: 100%;
+}
+.howitworksInfoText {
+  position: absolute;
+  color: #1c252a;
+  font-size: 1.3vw;
+  text-align: center;
+}
+
+/* left text */
+#p1 {
+  top: 15.5%;
+  left: 21.5%;
+}
+#p2 {
+  top: 28.5%;
+  left: -0.5%;
+}
+#p3 {
+  top: 39.5%;
+  left: 10%;
+}
+#p4 {
+  top: 56.5%;
+  left: 13%;
+}
+#p5 {
+  top: 66%;
+  left: -0.5%;
+}
+#p6 {
+  top: 86%;
+  left: 21.5%;
+}
+
+/* right text */
+#p7 {
+  top: 20.5%;
+  right: 3.5%;
+}
+#p8 {
+  top: 48.5%;
+  right: 5.5%;
+}
+#p9 {
+  top: 74.5%;
+  right: 2%;
+}

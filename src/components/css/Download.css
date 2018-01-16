@@ -1,0 +1,45 @@
+.downloadContainer {
+  background: #fff;
+}
+.downloadBlock {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 5%;
+  padding-bottom: 10%;
+  position: relative;
+  overflow: hidden;
+}
+.navApp {
+  overflow: hidden;
+}
+.navAppCol1 {
+  float: left;
+  width: 50%;
+  padding-top: 12%;
+}
+.navApp h1 {
+  color: #325a85;
+  font-size: 4vw;
+  padding-left: 2%;
+}
+.navAppCol2 {
+  float: left;
+  width: 50%;
+}
+.downloadImgScreens {
+  width: 100%
+}
+.navPlayMarketBlock {
+  display: block;
+  width: 45%
+}
+.navAppStoreBlock {
+  display: block;
+  width: 45%
+}
+.logoPlayMarket {
+  width: 100%;
+}
+.logoAppStore {
+  width: 100%
+}
