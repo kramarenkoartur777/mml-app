@@ -58,3 +58,36 @@
   padding-top: 1%;
   color: #d2d6df;
 }
+
+@media screen and (max-width: 750px ){
+  .featuresContainer {
+    padding-bottom: 15%;
+  }
+  .featuresCaption {
+    padding-top: 24%;
+    font-size: 6.5vw;
+    letter-spacing: 0.1vw;
+  }
+  .infoBlockFeatures {
+    margin-top: 12%;
+    width: 96%;
+  }
+  .featuresCol {
+    width: 100%;
+  }
+  .iconColFeatures{
+    width: 24%;
+    margin-bottom: 10%;
+  }
+  .textBlockFeatures {
+    width: 63%;
+    transform: translateY(10%);
+  }
+  .textBlockFeatures h1 {
+    font-size: 6vw;
+    letter-spacing: 0.5px;
+  }
+  .textBlockFeatures p {
+    font-size: 3.5vw;
+  }
+}

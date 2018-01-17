@@ -23,7 +23,7 @@ class FeaturesCol extends Component {
 class Features extends Component {
   render(){
     return(
-      <div id={this.props.id} className='featuresContainer'>
+      <div className='featuresContainer'>
         <h1 className='featuresCaption'>Features of the app</h1>
         <div className='infoBlockFeatures'>
           <FeaturesCol

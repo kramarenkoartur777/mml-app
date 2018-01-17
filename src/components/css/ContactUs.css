@@ -17,7 +17,8 @@
   width: 25%;
 }
 .contactusHeaderLeft h1 {
-  font-size: 1.4vw;
+  font-size: 1.3vw;
+  letter-spacing: 0.1vw;
   text-align: center;
 }
 .contactusHeaderMapBlock {
@@ -29,11 +30,12 @@
 .contactusHeaderMapIcon {
   float: left;
   width: 15%;
+  margin-top: 4%;
 }
 .contactusHeaderMapBlock p {
   float: left;
   margin: 5px 0;
-  font-size: 1vw;
+  font-size: 1.2vw;
   margin-left: 5%;
 }
 .contactusHeaderEmailBlock {
@@ -45,12 +47,13 @@
 .contactusHeaderEmailIcon {
   float: left;
   margin: 0;
+  margin-top: 3%;
   width: 15%;
 }
 .contactusHeaderEmailBlock p {
   float: left;
-  margin: 11px 0;
-  font-size: 1vw;
+  margin: 8px 0;
+  font-size: 1.2vw;
   margin-left: 5%;
 }
 .contactusFooter {
@@ -58,7 +61,61 @@
   width: 90%;
   margin: 0 auto;
 }
-.contactusFooter h6 {
+.h6TextDesktop {
   color: #7d96b5;
   font-size: 0.7vw;
+}
+.h6TextMobile {
+  display: none;
+}
+@media screen and (max-width: 750px) {
+  .contactusHeader {
+    width: 94%;
+  }
+  .contactusHeaderLeft {
+    width: 100%;
+    display: block;
+  }
+  .contactusHeaderLeft h1 {
+    font-size: 6vw;
+    margin-top: 10%;
+  }
+  .contactusHeaderMapBlock {
+    margin-top: 13%;
+    width: 58%;
+  }
+  .contactusHeaderMapIcon {
+    position: relative;
+    top: 50%;
+    transform: translateY(20%);
+  }
+  .contactusHeaderMapBlock p {
+    font-size: 4vw;
+  }
+  .contactusHeaderEmailBlock {
+    width: 58%;
+    margin-top: 4%;
+  }
+  .contactusHeaderEmailIcon {
+    position: relative;
+    top: 50%;
+    transform: translateY(10%);
+  }
+  .contactusHeaderEmailBlock p {
+    font-size: 4vw;
+  }
+  .contactusFooter {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .h6TextDesktop {
+    display: none;
+  }
+  .h6TextMobile {
+    display: block;
+    font-size: 4vw;
+    text-align: center;
+    margin-bottom: 6%;
+  }
 }

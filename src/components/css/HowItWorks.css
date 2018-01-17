@@ -64,3 +64,10 @@
   top: 74.5%;
   right: 2%;
 }
+
+
+@media screen and (max-width: 750px) {
+  .howitworksContainer {
+    display: none;
+  }
+}

@@ -4,7 +4,7 @@ import './css/HowItWorks.css';
 class HowItWorks extends Component {
   render(){
     return(
-      <div id={this.props.id} className='howitworksContainer'>
+      <div className='howitworksContainer'>
         <div className='howitworksLogoBlock'>
           <img
             className='howitworksLogoIcon'

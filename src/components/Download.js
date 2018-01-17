@@ -4,7 +4,7 @@ import './css/Download.css';
 class Download extends Component {
   render(){
     return(
-      <div id={this.props.id} className='downloadContainer'>
+      <div className='downloadContainer'>
         <div className='downloadBlock'>
           <div className='navApp'>
             <div className='navAppCol1'>

@@ -4,7 +4,7 @@ import './css/ContactUs.css';
 class ContactUs extends Component {
   render(){
     return(
-      <div id={this.props.id} className='contactUsContainer'>
+      <div className='contactUsContainer'>
         <div className='contactusHeader'>
           <div className='contactusHeaderLeft'>
             <h1>Bro App Technologies</h1>
@@ -25,7 +25,8 @@ class ContactUs extends Component {
           </div>
         </div>
         <div className='contactusFooter'>
-          <h6>All rights Reserved</h6>
+          <h6 className='h6TextDesktop'>All rights Reserved</h6>
+          <h6 className='h6TextMobile'>privacy policy</h6>
         </div>
       </div>
     );

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link, Element , animateScroll as scroll } from 'react-scroll';
 
 import './css/Home.css';
 
@@ -8,20 +9,62 @@ import Download from './Download';
 import ContactUs from './ContactUs';
 
 class Home extends Component {
-  render(){
-    return(
-      <div className='wrapper'>
+  constructor (props){
+      super(props);
+      this.state = {
+        menu: false
+      };
+      this.scrollToTop = this.scrollToTop.bind(this);
+      this._hamburger = this._hamburger.bind(this);
+  }
+  scrollToTop() {
+    scroll.scrollToTop();
+  }
+  _hamburger(){
+    if(this.state.menu){
+      return(
+        <div className='homeContainerHamburger'>
+          <div className='hamburgerCloseBlock'>
+            <a onClick={() => this.setState({menu: false})}><img
+              className='hamburgerCloseIcon'
+              src={require('./img/closeIcon.png')}
+            /></a>
+          </div>
+          <div className='hamburgerLogoBlock'>
+            <img
+              className='hamburgerLogoIcon'
+              src={require('./img/logo-big.png')}
+            />
+          </div>
+          <div className='hamburgerNav'>
+            <ul className='hamburgerNavUl'>
+              <li><Link to="howitworks" spy={false} smooth={true} duration={1000} >how it works</Link></li>
+              <li><Link to="features" spy={false} smooth={true} duration={1250} >features</Link></li>
+              <li><Link to="download" spy={false} smooth={true} duration={1500} >download</Link></li>
+              <li><Link to="contactus" spy={false} smooth={true} duration={1750} >contact us</Link></li>
+            </ul>
+          </div>
+        </div>
+      );
+    } else {
+      return(
         <div className='homeContainer'>
           <div className='header'>
             <ul className='navHeader'>
-              <li><a href='#howitworks'>how it works</a></li>
-              <li><a href='#features'>features</a></li>
-              <li><a href='#download'>download</a></li>
-              <li><a href='#contactus'>contact us</a></li>
+              <li><Link to="howitworks" spy={false} smooth={true} duration={1000} >how it works</Link></li>
+              <li><Link to="features" spy={false} smooth={true} duration={1250} >features</Link></li>
+              <li><Link to="download" spy={false} smooth={true} duration={1500} >download</Link></li>
+              <li><Link to="contactus" spy={false} smooth={true} duration={1750} >contact us</Link></li>
             </ul>
           </div>
           <div className='logoBlock'>
             <div className='logoCol'>
+              <a className='linkLogoHamburger' onClick={() => this.setState({menu: true})}>
+                <img
+                  className='imgLogoHamburger'
+                  src={require('./img/mml-white-logo.png')}
+                />
+              </a>
               <img
                 className='imgLogo'
                 src={require('./img/mml-white-logo.png')}
@@ -36,15 +79,36 @@ class Home extends Component {
                   src={require('./img/logo-big.png')}
                 />
               </div>
-              <h2>Let your client get the perfect match</h2>
+              <h2>Connecting Agents. Closing Deals.</h2>
               <p>a one liner text <br /> it may extend to 2 lines <br /> or even 3 if needed</p>
             </div>
           </div>
         </div>
-        <HowItWorks id='howitworks' />
-        <Features id='features'/>
-        <Download id='download' />
-        <ContactUs id='contactus' />
+      );
+    }
+  }
+  render(){
+    return(
+      <div className='wrapper'>
+
+        {this._hamburger()}
+
+        <Element name="howitworks" >
+          <HowItWorks />
+        </Element>
+
+        <Element name="features" >
+          <Features />
+        </Element>
+
+        <Element name="download" >
+          <Download />
+        </Element>
+
+        <Element name="contactus" >
+          <ContactUs />
+        </Element>
+
       </div>
     );
   }

@@ -31,7 +31,7 @@
 }
 .navPlayMarketBlock {
   display: block;
-  width: 45%
+  width: 45%;
 }
 .navAppStoreBlock {
   display: block;
@@ -42,4 +42,30 @@
 }
 .logoAppStore {
   width: 100%
+}
+
+@media screen and (max-width: 750px) {
+  .navAppCol1 {
+    display: block;
+    width: 100%;
+    padding-top: 10%;
+  }
+  .navAppCol2 {
+    display: block;
+    width: 100%;
+    margin-top: 11.5%;
+  }
+  .navApp h1  {
+    font-size: 6.5vw;
+    text-align: center;
+  }
+  .navPlayMarketBlock {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 7%
+  }
+  .navAppStoreBlock {
+    width: 50%;
+    margin: 0 auto;
+  }
 }
