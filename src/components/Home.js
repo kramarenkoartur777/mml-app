@@ -24,30 +24,38 @@ class Home extends Component {
     if(this.state.menu){
       return(
         <div className='homeContainerHamburger'>
-          <div className='hamburgerCloseBlock'>
-            <a onClick={() => this.setState({menu: false})}><img
-              className='hamburgerCloseIcon'
-              src={require('./img/closeIcon.png')}
-            /></a>
-          </div>
-          <div className='hamburgerLogoBlock'>
-            <img
-              className='hamburgerLogoIcon'
-              src={require('./img/logo-big.png')}
-            />
-          </div>
-          <div className='hamburgerNav'>
-            <ul className='hamburgerNavUl'>
-              <li><Link to="howitworks" spy={false} smooth={true} duration={1000} >how it works</Link></li>
-              <li><Link to="features" spy={false} smooth={true} duration={1250} >features</Link></li>
-              <li><Link to="download" spy={false} smooth={true} duration={1500} >download</Link></li>
-              <li><Link to="contactus" spy={false} smooth={true} duration={1750} >contact us</Link></li>
-            </ul>
+          <div className='asd'>
+            <div className='hamburgerCloseBlock'>
+              <a onClick={() => this.setState({menu: false})}><img
+                className='hamburgerCloseIcon'
+                src={require('./img/closeIcon.png')}
+              /></a>
+            </div>
+            <div className='hamburgerLogoBlock'>
+              <img
+                className='hamburgerLogoIcon'
+                src={require('./img/logo-big.png')}
+              />
+            </div>
+            <div className='hamburgerNav'>
+              <ul className='hamburgerNavUl'>
+                <li><Link onClick={() => this.setState({menu: false})} to="howitworks" spy={false} smooth={true} duration={1000} >how it works</Link></li>
+                <li><Link onClick={() => this.setState({menu: false})} to="features" spy={false} smooth={true} duration={1250} >features</Link></li>
+                <li><Link onClick={() => this.setState({menu: false})} to="download" spy={false} smooth={true} duration={1500} >download</Link></li>
+                <li><Link onClick={() => this.setState({menu: false})} to="contactus" spy={false} smooth={true} duration={1750} >contact us</Link></li>
+              </ul>
+            </div>
           </div>
         </div>
       );
-    } else {
-      return(
+    }
+  }
+  render(){
+    return(
+      <div className='wrapper'>
+
+        {this._hamburger()}
+
         <div className='homeContainer'>
           <div className='header'>
             <ul className='navHeader'>
@@ -59,12 +67,13 @@ class Home extends Component {
           </div>
           <div className='logoBlock'>
             <div className='logoCol'>
+            {!this.state.menu ?
               <a className='linkLogoHamburger' onClick={() => this.setState({menu: true})}>
                 <img
                   className='imgLogoHamburger'
                   src={require('./img/mml-white-logo.png')}
                 />
-              </a>
+              </a> : null }
               <img
                 className='imgLogo'
                 src={require('./img/mml-white-logo.png')}
@@ -84,14 +93,6 @@ class Home extends Component {
             </div>
           </div>
         </div>
-      );
-    }
-  }
-  render(){
-    return(
-      <div className='wrapper'>
-
-        {this._hamburger()}
 
         <Element name="howitworks" >
           <HowItWorks />
